@@ -29,6 +29,7 @@ def products():
 def delete_product(name_product):
     all_products.pop(name_product)
     flash(f'Product {name_product} deleted!')
+
     return redirect(url_for('products'))
 
 
